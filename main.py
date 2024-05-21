@@ -11,7 +11,7 @@ web_driver.get("https://qase.io/")
 web_driver.implicitly_wait(5)   # qidirish so'rovlari uchun kutilayotgan vaqt
 
 """Sign up testing"""
-email = "tjasur232@gmail.com"
+email = "tjasur235@gmail.com"
 element = web_driver.find_element(By.XPATH, "//div/h1")
 assert "All-in-one" in element.text, "Page did not open"
 web_driver.find_element(By.XPATH, "//p/following-sibling::div/a[text()='Start for free']").click()

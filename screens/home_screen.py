@@ -31,10 +31,10 @@ class HomeScreen(BaseScreen):
     #     self.click(self.agree_mark_box)
 
     def click_on_create_qase_account(self):
-        self.click(self.create_your_qase_account_button)
+        self.click(self.create_your_qase_account)
 
     def enter_password(self, password):
-        self.enter_data(self.email_field, password)
+        self.enter_data(self.password_field, password)
 
     def enter_confirm_password(self, confirm_password):
         self.enter_data(self.confirm_password_field, confirm_password)

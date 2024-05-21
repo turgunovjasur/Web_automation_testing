@@ -6,4 +6,4 @@ class TestSignUp(BaseTest):
 
     def test_signup(self):
         self.signup = LoginActions(self.driver)
-        assert self.signup.login_actions("anyEmail111@gamil.com", "12345ABCabc*")
+        assert self.signup.login_actions("anyemail1112@gamil.com", "12345ABCabc*")
