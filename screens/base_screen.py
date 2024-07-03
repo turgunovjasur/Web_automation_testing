@@ -8,21 +8,21 @@ class BaseScreen:
         self.driver = driver
 
     def click(self, locator):
-        var = WebDriverWait(self.driver, 10).until(ec.visibility_of_element_located(locator))
+        var = WebDriverWait(self.driver, 20).until(ec.visibility_of_element_located(locator))
         var.click()
 
     def enter_data(self, locator, text):
-        var = WebDriverWait(self.driver, 10).until(ec.visibility_of_element_located(locator))
+        var = WebDriverWait(self.driver, 20).until(ec.visibility_of_element_located(locator))
         var.send_keys(text)
 
     def get_element_text(self, locator):
-        var = WebDriverWait(self.driver, 10).until(ec.visibility_of_element_located(locator))
+        var = WebDriverWait(self.driver, 20).until(ec.visibility_of_element_located(locator))
         return var.text
 
     def is_element_visible(self, locator):
-        var = WebDriverWait(self.driver, 10).until(ec.visibility_of_element_located(locator))
+        var = WebDriverWait(self.driver, 20).until(ec.visibility_of_element_located(locator))
         return bool(var)
 
     def clear_field(self, locator):
-        var = WebDriverWait(self.driver, 10).until(ec.visibility_of_element_located(locator))
+        var = WebDriverWait(self.driver, 20).until(ec.visibility_of_element_located(locator))
         var.clear()
