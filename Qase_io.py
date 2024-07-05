@@ -55,7 +55,7 @@ def check_email_on_page(driver, email):
 
 
 def main():
-    email = "tjasur224453@gmail.com"
+    email = "tjasur22445354@gmail.com"
     password = '01062001Jasur@'
     password_confirmation = '01062001Jasur@'
 
